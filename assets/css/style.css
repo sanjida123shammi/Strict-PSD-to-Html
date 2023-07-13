@@ -1,0 +1,312 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/* Global CSS */
+body{
+    background: #f6f9f9;
+	font-family: 'Lato', sans-serif;
+}
+h2, h3, h4, h5, h6{
+    color: #2d3950;
+}
+p{
+    color: #999999;
+}
+a{
+	text-decoration: none;
+}
+.no-padding{
+    padding: 0;
+}
+h2{
+    margin-bottom: 22px;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+}
+
+
+/* Header Section */
+header .logo-image{
+	margin: 40px 0 45px;
+}
+
+
+/* Hero Section */
+.hero-section{
+    background: url('../img/banner.jpg') no-repeat center;
+    background-size: cover;
+}
+.hero-section h1{
+    margin: 10% 0 12px;
+	font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.hero-section .title-border{
+	background: #15a4fa;
+    margin: 0 auto 25px;
+    width: 650px;
+    height: 3px;
+}
+.hero-section p{
+    font-size: 20px;
+    font-weight: 400;
+	text-align: center;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.hero-section .btn-action{
+    background: rgba(0,0,0,0);
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+	display: block;
+    margin: 50px auto;
+    padding: 12px 35px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.hero-section .btn-action:hover{
+	background: #15a4fa;
+}
+.hero-section .scroll-down{
+	color: #fff;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: 220px 0 8%;
+}
+
+
+/* Intro Section */
+.intro-section{
+    margin: 100px 0;
+    text-align: center;
+}
+.intro-section p{
+    padding: 0 100px;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+
+/* Feature Section */
+.feature-section{
+    background: #ffffff;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.feature-section .feature-image{
+    display: block;
+    margin: 75px auto 35px;
+}
+.feature-section h3{
+    font-size: 26px;
+    line-height: 36px;
+}
+.feature-section p{
+    padding: 10px 32px;
+    font-size: 18px;
+}
+
+
+/* Portfolio Section */
+.portfolio-section{
+    margin: 75px 0;
+    text-align: center;
+}
+.portfolio-section p{
+    margin-bottom: 75px;
+    font-size: 18px;
+}
+.portfolio-section .portfolio-item{
+    margin-bottom: 25px;
+} 
+.portfolio-section .item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio-section .item .portfolio-image{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-section .item .item-hover{
+    position: absolute;
+    background: rgba(43, 172, 250, 0.85);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: all 0.4s ease-in-out;
+}
+.item:hover .item-hover{
+    left: 0;
+}
+.portfolio-section .item .item-hover ul{
+    margin-top: 32.5%;
+    padding: 0;
+}
+.portfolio-section .item .item-hover ul li{
+    display: inline-block;
+    list-style: none;
+}
+.portfolio-section .item .item-hover ul li a .fa-solid{
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+}
+
+
+/* Contact Section */
+.contact-section{
+    position: relative;
+    background: url('../img/footer-bg.jpg') no-repeat center top;
+    background-size: cover;
+    padding: 85px 0 92px;
+    color: #fff;
+    z-index: 1;
+}
+.contact-section::before{
+    content: "";
+    position: absolute;
+    background: rgba(45, 57, 80, 0.85);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.contact-section h2{
+    text-align: center;
+    color: #fff;
+}
+.contact-section p{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+.contact-section form .input-content{
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    margin: 25px 0;
+    padding: 18px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.contact-section form .input-content::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999999;
+    opacity: 1; /* Firefox */
+}
+.contact-section .form-check{
+    display: inline-block;
+    margin: 15px 0;
+}
+.contact-section .form-check .form-check-input{
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+.contact-section .form-check .form-check-label{
+    color: #efefef;
+    cursor: pointer;
+}
+.contact-section .btn-send{
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #15a4fa;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    padding: 10px 50px;
+    font-size: 18px;
+    float: right;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.contact-section .btn-send:hover{
+    background: #15a4fa;
+}
+
+
+/* Footer Section */
+footer{
+    padding: 50px 0;
+}
+footer p{
+    margin: 15px 0;
+}
+footer ul{
+    padding: 0;
+    float: right;
+}
+footer ul li{
+    display: inline-block;
+    list-style: none;
+}
+footer ul li a{
+    background: #15a4fa;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 12px 14px;
+    font-size: 20px;
+    color: #ffffff;
+}
+footer ul li a .fa-facebook-f{
+    padding: 0 4px;
+}
+footer ul li a .fa-google{
+    padding: 0 1px;
+}
+footer ul li a .fa-linkedin-in{
+    padding: 0 2px;
+}
+
+
+/* Tablet & Mobile Responsive CSS */
+@media (min-width: 576px) and (max-width: 768px),
+(min-width: 320px) and (max-width: 576px) {
+    .hero-section .title-border { width: 85%;}
+    .hero-section h1 { margin: 85px 0 0px;  font-size: 80px;}
+    .hero-section p { padding: 0 10px;}
+    .hero-section .btn-action { margin: 200px auto 100px;      font-size: 18px;}
+    .hero-section .scroll-down { display: none;}
+    .intro-section { margin: 80px 0;}
+    .intro-section p {  padding: 15px 0px 0;    font-size: 20px;    line-height: 40px;}
+    .feature-section{   padding-top: 50px;}
+    .feature-section .feature-content{ margin: 50px 0;}
+    .feature-section .feature-image { margin: initial;  width: 170px;}
+    .feature-section h3 { font-size: 30px;}
+    .feature-section p {  padding: 10px 0;    font-size: 20px;}
+    .portfolio-section h2{  font-size: 38px;}
+    .portfolio-section p, .contact-section p {  margin-bottom: 50px;    font-size: 20px;}
+    .portfolio-section .portfolio-item {  margin-bottom: 40px;}
+}
+
+
+/* Mobile Responsive CSS */
+@media (min-width: 320px) and (max-width: 576px){
+    h2 { margin-bottom: 10px;    font-size: 38px;}
+    .hero-section h1 { font-size: 75px;}
+    .intro-section { margin: 65px 0;}
+    .feature-section .feature-content{ margin: 20px 0;}
+    .mr-0{  margin-right: 0;}
+    .feature-section .feature-image { margin: 10px auto 35px;  width: 150px;}
+    .feature-section p {  padding: 10px 20px;}
+    .portfolio-section { margin: 60px 0;}
+    .portfolio-section .portfolio-item {    margin-bottom: 25px;}
+    .contact-section { padding: 60px 0 70px;}
+    footer { padding: 25px 0;   text-align: center;}
+    footer ul { padding: 20px 0;    float: initial;}
+}
